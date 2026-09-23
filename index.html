@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google clone</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+</head>
+<body class="bg-white min-h-screen flex flex-col">
+
+    <header class="flex justify-between items-center text-[16px] sm:text-[18px] md:text-[20px] p-3 sm:p-4 md:p-5">
+        <div>
+            <div class="flex space-x-4 sm:space-x-5">
+                <a href="" class="text-gray-900 hover:underline">About</a>
+                <a href="" class="text-gray-900 hover:underline">Store</a>
+            </div>
+        </div>
+
+        <div>
+            <div class="flex items-center space-x-3 sm:space-x-4">
+                <a href="" class="text-gray-900 hover:underline">Gmail</a>
+                <a href="" class="text-gray-900 hover:underline">Images</a>
+
+                <svg class="w-5 h-5 sm:w-6 sm:h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#666666"><path d="M200-140q-38.27 0-54.4-34.15-16.14-34.16 7.79-63.54L380-513.08V-760h-47.69q-12.75 0-21.38-8.63-8.62-8.63-8.62-21.38 0-12.76 8.62-21.37 8.63-8.62 21.38-8.62h295.38q12.75 0 21.38 8.63 8.62 8.63 8.62 21.38 0 12.76-8.62 21.37-8.63 8.62-21.38 8.62H580v246.92l226.61 275.39q23.93 29.38 7.79 63.54Q798.27-140 760-140H200Zm0-60h560L520-492v-268h-80v268L200-200Zm280-280Z" />
+                </svg>
+
+                <svg class="w-5 h-5 sm:w-6 sm:h-6"xmlns="http://www.w3.org/2000/svg"viewBox="0 -960 960 960"fill="#666666"><path d="M194.27-194.27q-18.88-18.88-18.88-45.73 0-26.85 18.88-45.73 18.88-18.88 45.73-18.88 26.85 0 45.73 18.88 18.88 18.88 18.88 45.73 0 26.85-18.88 45.73-18.88 18.88-45.73 18.88-26.85 0-45.73-18.88Zm240 0q-18.88-18.88-18.88-45.73 0-26.85 18.88-45.73 18.88-18.88 45.73-18.88 26.85 0 45.73 18.88 18.88 18.88 18.88 45.73 0 26.85-18.88 45.73-18.88 18.88-45.73 18.88-26.85 0-45.73-18.88Zm240 0q-18.88-18.88-18.88-45.73 0-26.85 18.88-45.73 18.88-18.88 45.73-18.88 26.85 0 45.73 18.88 18.88 18.88 18.88 45.73 0 26.85-18.88 45.73-18.88 18.88-45.73 18.88-26.85 0-45.73-18.88Zm-480-240q-18.88-18.88-18.88-45.73 0-26.85 18.88-45.73 18.88-18.88 45.73-18.88 26.85 0 45.73 18.88 18.88 18.88 18.88 45.73 0 26.85-18.88 45.73-18.88 18.88-45.73 18.88-26.85 0-45.73-18.88Zm240 0q-18.88-18.88-18.88-45.73 0-26.85 18.88-45.73 18.88-18.88 45.73-18.88 26.85 0 45.73 18.88 18.88 18.88 18.88 45.73 0 26.85-18.88 45.73-18.88 18.88-45.73 18.88-26.85 0-45.73-18.88Zm240 0q-18.88-18.88-18.88-45.73 0-26.85 18.88-45.73 18.88-18.88 45.73-18.88 26.85 0 45.73 18.88 0 26.85-18.88 45.73-18.88 18.88-45.73 18.88-26.85 0-45.73-18.88Zm-480-240q-18.88-18.88-18.88-45.73 0-26.85 18.88-45.73 18.88-18.88 45.73-18.88 26.85 0 45.73 18.88 18.88 18.88 18.88 45.73 0 26.85-18.88 45.73-18.88 18.88-45.73 18.88-26.85 0-45.73-18.88Zm240 0q-18.88-18.88-18.88-45.73 0-26.85 18.88-45.73 18.88-18.88 45.73-18.88 26.85 0 45.73 18.88 18.88 18.88 18.88 45.73 0 26.85-18.88 45.73-18.88 18.88-45.73 18.88-26.85 0-45.73-18.88Zm240 0q-18.88-18.88-18.88-45.73 0-26.85 18.88-45.73 18.88-18.88 45.73-18.88 26.85 0 45.73 18.88 18.88 35 18.88 45.73 0 26.85-18.88 45.73-18.88 18.88-45.73 18.88-26.85 0-45.73-18.88Z" />
+                </svg>
+
+                <svg class="w-5 h-5 sm:w-6 sm:h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#666666"><path d="M240.92-268.31q51-37.84 111.12-59.77Q412.15-350 480-350t127.96 21.92q60.12 21.93 111.12 59.77 37.3-41 59.11-94.92Q800-417.15 800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 62.85 21.81 116.77 21.81 53.92 59.11 94.92Zm146.7-219.31Q350-525.23 350-580q0-54.77 37.62-92.38Q425.23-710 480-710q54.77 0 92.38 37.62Q610-634.77 610-580q0 54.77-37.62 92.38Q534.77-450 480-450q-54.77 0-92.38-37.62ZM480-100q-79.15 0-148.5-29.77t-120.65-81.08q-51.31-51.3-81.08-120.65Q100-400.85 100-480t29.77-148.5q29.77-69.35 81.08-120.65 51.3-51.31 120.65-81.08Q400.85-860 480-860t148.5 29.77q69.35 29.77 120.65 81.08 51.31 51.3 81.08 120.65Q860-559.15 860-480t-29.77 148.5q-29.77 69.35-81.08 120.65-51.3 51.31-120.65 81.08Q559.15-100 480-100Zm104.42-77.42q50.27-17.43 89.27-48.73-39-30.16-88.11-47Q536.46-290 480-290t-105.77 16.65q-49.31 16.66-87.92 47.2 39 31.3 89.27 48.73Q425.85-160 480-160t104.42-17.42Zm-54.5-352.66Q550-550.15 550-580t-20.08-49.92Q509.85-650 480-650t-49.92 20.08Q410-609.85 410-580t20.08 49.92Q450.15-510 480-510t49.92-20.08ZM480-580Zm0 355Z" />
+                </svg>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="flex-1 flex flex-col items-center px-4 sm:px-6">
+        <img class="w-48 sm:w-56 md:w-64 lg:w-72 mb-8 sm:mb-10"src="./Google.png"alt="Google">
+
+        <div class="w-full max-w-[45rem]">
+            <div class="relative">
+                <input type="text" class="w-full bg-gray-200 rounded-full py-3 sm:py-4 pl-12 pr-24 outline-none hover:bg-gray-300 focus:bg-gray-200">
+
+                <svg class="absolute left-4 sm:left-5 top-3 sm:top-4 w-5 h-5 sm:w-6 sm:h-6"xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"fill="#666666"> <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" /> </svg>
+
+                <svg class="absolute right-14 sm:right-16 top-3 sm:top-4 w-5 h-5 sm:w-6 sm:h-6"  xmlns="http://www.w3.org/2000/svg"   viewBox="0 -960 960 960"fill="#666666"><path d="M395-435q-35-35-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35q-50 0-85-35Zm85-205Zm-40 520v-123q-104-14-172-93t-68-184h80q0 83 58.5 141.5T480-320q83 0 141.5-58.5T680-520h80q0 105-68 184t-172 93v123h-80Zm68.5-371.5Q520-503 520-520v-240q0-17-11.5-28.5T480-800q-17 0-28.5 11.5T440-760v240q0 17 11.5 28.5Q463-480 480-480t28.5-11.5Z" /></svg>
+
+                <svg class="absolute right-4 sm:right-6 top-3 sm:top-4    w-5 h-5 sm:w-6 sm:h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"  fill="#666666"><path d="M395-395q-35-35-35-85t35-85q35-35 85-35t85 35q35 35 35 85t-35 85q-35 35-85 35t-85-35Zm113.5-56.5Q520-463 520-480t-11.5-28.5Q497-520 480-520t-28.5 11.5Q440-497 440-480t11.5 28.5Q463-440 480-440t28.5-11.5ZM200-120q-33 0-56.5-23.5T120-200v-160h80v160h160v80H200Zm400 0v-80h160v-160h80v160q0 33-23.5 56.5T760-120H600ZM120-600v-160q0-33 23.5-56.5T200-840h160v80H200v160h-80Zm640 0v-160H600v-80h160q33 0 56.5 23.5T840-760v160h-80Z" /></svg>
+
+                <div class="flex flex-wrap justify-center gap-3 sm:gap-4 mt-8 sm:mt-10">
+                    <button class="px-4 sm:px-5 py-2text-[15px] sm:text-[17px] bg-gray-100 rounded   hover:bg-gray-200"> Google Search 
+                    </button>
+
+                    <button
+                        class="px-4 sm:px-5 py-2 text-[15px] sm:text-[17px] bg-gray-100 rounded hover:bg-gray-200">I'm Feeling Lucky
+                    </button>
+                </div>
+
+                <div class="mt-7 sm:mt-8 mb-8">
+                    <div class="flex flex-wrap justify-center items-center gap-x-3 gap-y-2 text-[14px]     sm:text-[16px]">
+
+                        <span>Google offered in: </span>
+                        <a href="" class="text-blue-600 hover:underline"> हिन्दी</a>
+                        <a href="" class="text-blue-600 hover:underline">বাংলা</a>
+                        <a href="" class="text-blue-600 hover:underline">मराठी</a>
+                        <a href="" class="text-blue-600 hover:underline">ਪੰਜਾਬੀ</a>
+                        <a href="" class="text-blue-600 hover:underline">ગુજરાતી</a>
+                        <a href="" class="text-blue-600 hover:underline">தமிழ்</a>
+                        <a href="" class="text-blue-600 hover:underline">অসমীয়া</a>
+                        <a href="" class="text-blue-600 hover:underline">తెలుగు</a>
+                        <a href="" class="text-blue-600 hover:underline"> বাংল</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-200 text-gray-900 text-[14px] sm:text-[16px] md:text-[18px]">
+
+        <div class="border-b border-gray-400 py-3 sm:py-4 px-4 sm:px-6">India</div>
+        <div class="flex flex-col md:flex-row justify-between gap-3py-3 sm:py-4 px-4 sm:px-6">
+            <ul class="flex flex-wrap justify-center md:justify-start gap-x-5 sm:gap-x-6 gap-y-2">
+                <li><a href="" class="hover:underline">Advertising</a></li>
+                <li><a href="" class="hover:underline">Business</a></li>
+                <li><a href="" class="hover:underline">How Search works</a></li>
+            </ul>
+
+            <ul class="flex flex-wrap justify-center md:justify-end gap-x-5 sm:gap-x-8 gap-y-2">
+                <li><a href="" class="hover:underline">Privacy</a></li>
+                <li><a href="" class="hover:underline">Terms</a></li>
+                <li><a href="" class="hover:underline">Settings </a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
